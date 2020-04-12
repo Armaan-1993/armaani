@@ -37,8 +37,7 @@ console.log("The remainder of the division is " + remainder(34 ,8));
 // Comparison with greater than operator
 
 const greater = (a ,b) => {
-    if (a > b)
-    {
+    if (a > b) {
         return "The first number is greater";
     }
     return "The second number is greater";
@@ -48,22 +47,20 @@ console.log(greater( 3 ,6));
 // Comparison with less than operator
 
 const lesser = (a ,b) => {
-    if (a < b)
-    {
+    if (a < b) {
         return "The first number is lesser";
     }
-return "The second number is lesser";
+    return "The second number is lesser";
 }
 console.log(lesser( 3 ,6));
 
 // Comparision with equality operator
 
 const equality = (a , b) => {
-    if (a == b)
-    {
+    if (a == b) {
         return "The numbers are equal";
     }
-return "The numbers are not equal";
+    return "The numbers are not equal";
 }
 console.log(equality(34 , 7));
 
