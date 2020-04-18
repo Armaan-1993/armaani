@@ -1,11 +1,13 @@
 const readlineSync = require("readline-sync");
-const num = readlineSync.question("Enter the number ");
+const num = Number(readlineSync.question("Enter the number "));
 const checkIfPrimeNumber = (num) => {
-  if (num == 1) {
+  if (num === 1) {
     console.log("1 is neither prime nor composite");
+  } else if (num === 2) {
+    console.log("The number is prime");
   } else {
-    let isprime = true;
-    for (let i = 2; i <= num - 1 && num != i; i++) {
+    let isprime = false;
+    for (let i = 2; i < num; i++) {
       if (num % i === 0) {
         isprime = false;
         break;
@@ -19,12 +21,20 @@ const checkIfPrimeNumber = (num) => {
       console.log("The number is not prime");
     }
   }
-}
+};
 checkIfPrimeNumber(num);
 
+/*Output:
 
-
-
-
-
-
+PS C:\Users\armaa\PycharmProjects\Learningjavascript\exercises> node .\005_prime.js
+Enter the number 1
+1 is neither prime nor composite
+PS C:\Users\armaa\PycharmProjects\Learningjavascript\exercises> node .\005_prime.js
+Enter the number 2
+The number is prime
+PS C:\Users\armaa\PycharmProjects\Learningjavascript\exercises> node .\005_prime.js
+Enter the number 37
+The number is prime
+PS C:\Users\armaa\PycharmProjects\Learningjavascript\exercises> node .\005_prime.js
+Enter the number 221
+The number is not prime*/
