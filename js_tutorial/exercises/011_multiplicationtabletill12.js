@@ -1,4 +1,17 @@
-// 11. Write a program that prints a multiplication table for numbers up to 12.
+//11. Write a program that prints a multiplication table for numbers up to 12.
+
+const num = 12;
+const multiTable = (num) => {
+    for(let i = 1; i <= num; i++) { 
+        console.log(`\nThe multiplication table for ${i} is : \n`);    
+        for(let j = 1; j <= 10; j++) {   
+            console.log(`${i} x ${j} = ${i*j}`);
+        }
+    }
+}
+multiTable(num);
+
+// Alternative Method:
 
 const num = 12;
 const multiTable = (num) => {
@@ -12,6 +25,7 @@ const multiTable = (num) => {
     }
 }   
 multiTable(num);
+
 
 /*Output:
 
