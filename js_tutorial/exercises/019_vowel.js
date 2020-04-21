@@ -4,11 +4,11 @@ const chara = "a";
 const vowel = (chara) => {
     if(chara === "a" || chara === "e" || chara === "i " || chara === "o" || chara === "u") {
         console.log("The character is a vowel");
-    }
-  else {
+    } else {
         console.log("The character is a consonant");
     }    
 }
+
 vowel(chara);
 
 /*Output:
