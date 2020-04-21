@@ -1,22 +1,21 @@
 //22. Write a program to check Uppercase, Lowercase or special character
 
-const chara = "d";
+const character = "d";
 const checkIfAlphabetUsingASCII = (chara) => {
     let num = chara.charCodeAt() 
     if (num >= 65 && num <= 90) {
         console.log(`The ascii value of the upper case character ${chara} is ${num}`);
-    }
-    else if (num >= 97 && num <= 122) {
+    } else if (num >= 97 && num <= 122) {
         console.log(`The ascii value of the lower case character ${chara} is ${num}`);
-    }
-    else if ((num >= 32 && num <= 47) ||
+    } else if ((num >= 32 && num <= 47) ||
             (num >= 58 && num <= 64) || 
             (num >= 91 && num <= 96) || 
             (num >= 123 && num <= 126)) {
         console.log(`The ascii value of the special character ${chara} is ${num}`);
     }
 }
-checkIfAlphabetUsingASCII(chara);
+
+checkIfAlphabetUsingASCII(character);
 
 /*Output:
 
