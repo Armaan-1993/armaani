@@ -2,28 +2,30 @@
 
 const num = 12;
 const multiTable = (num) => {
-    for(let i = 1; i <= num; i++) { 
+    for (let i = 1; i <= num; i++) { 
         console.log(`\nThe multiplication table for ${i} is : \n`);    
-        for(let j = 1; j <= 10; j++) {   
+        for (let j = 1; j <= 10; j++) {   
             console.log(`${i} x ${j} = ${i*j}`);
         }
     }
 }
+
 multiTable(num);
 
 // Alternative Method:
 
 const num = 12;
 const multiTable = (num) => {
-    for(let i = 1; i <= num; i++) { 
+    for (let i = 1; i <= num; i++) { 
         console.log(`The multiplication table for ${i} is : `);    
         let obj = {};
-        for(let j = 1; j <= 10; j++) {   
+        for (let j = 1; j <= 10; j++) {   
             obj[`${i} x ${j}`] = i*j;   // Used objects. Also used "console.table" to get a tablulated output
         }
         console.table(obj);
     }
 }   
+
 multiTable(num);
 
 
