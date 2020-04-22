@@ -3,21 +3,21 @@
 let num = 1000;
 const powersOfThree = (num) => {
     let powerOfThree = false;
-    for(i = 2; i < num/2; i++) {     //Logic used: Checked if modulus operation will result in 0. Then divided 
-        if(num % i === 0) {          //the number with i to find the quotient and checked if the quotient/i 
+    for (let i = 2; i < num / 2; i++) {     //Logic used: Checked if modulus operation will result in 0. Then divided 
+        if (num % i === 0) {          //the number with i to find the quotient and checked if the quotient/i 
             let quotient = num/i;    //gives i*/.
-            if(quotient/i === i) {
+            if (quotient/i === i) {
                 powerOfThree = true;               
             }
         }
     } 
-    if(powerOfThree === true) {
+    if (powerOfThree === true) {
         console.log(`The number ${num} is a power of 3`);
-    }
-    else {
+    } else {
         console.log(`The number ${num} is not a power of 3`);
     }
 }
+
 powersOfThree(num);
 
 /*Output:
