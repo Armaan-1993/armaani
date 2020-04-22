@@ -1,14 +1,14 @@
 const readlineSync = require("readline-sync");
-const num = Number(readlineSync.question("Enter the number "));
+const num = parseInt(readlineSync.question("Enter the number "));
 const checkIfPrimeNumber = (num) => {
   if (num === 1) {
     console.log("1 is neither prime nor composite");
   } else if (num === 2) {
     console.log("The number is prime");
   } else {
-    let isprime = false;
-    for (let i = 2; i < num; i++) {
-      if (num % i === 0) {
+      let isprime = false;
+      for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
         isprime = false;
         break;
       } else {
@@ -21,7 +21,8 @@ const checkIfPrimeNumber = (num) => {
       console.log("The number is not prime");
     }
   }
-};
+}
+
 checkIfPrimeNumber(num);
 
 /*Output:
