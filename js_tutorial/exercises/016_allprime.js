@@ -1,40 +1,39 @@
-/* 16. Write a program that prints all prime numbers.
-(Note: if your programming language does not support arbitrary size numbers, 
-printing all primes up to the largest number you can easily represent is fine too.)*/
+const num = 95;
+console.log (`The list of prime numbers from 1 to ${num} are : \n `)
+const checkIfPrime = (number) => {
+    if (number === 1) {
+        return false;
+    } else if (number === 2) {
+        return true;
+    } else {
+        let prime = false;
+        for (let i = 2; i < number; i++) {
+            if (number % i === 0) {
+                isPrime = false;
+                break;
+            }  else {
+                isPrime = true;
+            }
 
-let num = 100;
-const checkIfPrimeNumber = (num) => {
-  if (num === 1) {
-    return false;
-  } else if (num === 2) {
-    return true;
-  } else {
-    let isprime = false;
-    for (let i = 2; i < num; i++) {
-      if (num % i === 0) {
-        isprime = false;
-        break;
-      } else {
-        isprime = true;
-      }
+        }
+        return isPrime;    
+    }    
+}   
+
+for (let i = 1; i <= num; i++) {
+    if(checkIfPrime(i) === true) {
+        console.log(i)
     }
-    return isprime;
-  }
-};
-
-for(let i = 1; i <= num; i++){
-  if(checkIfPrimeNumber(i)) {
-    console.log(i)
-  }
 }
 
 /*Output:
 
-PS C:\Users\armaa\PycharmProjects\Learningjavascript\exercises> node .\016_allprime.js
-2 
-3 
-5 
-7 
+The list of prime numbers from 1 to 95 are : 
+
+2
+3
+5
+7
 11
 13
 17
@@ -54,5 +53,4 @@ PS C:\Users\armaa\PycharmProjects\Learningjavascript\exercises> node .\016_allpr
 73
 79
 83
-89
-97*/
+89*/
