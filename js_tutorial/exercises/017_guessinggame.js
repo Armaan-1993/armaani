@@ -4,21 +4,21 @@ At the end the number of tries needed should be printed.
 It counts only as one try if they input the same number multiple times consecutively*/
 
 const readlineSync = require("readline-sync");
-let guessNum = Number(readlineSync.question("Enter the number to be guessed "));
+let guessNum = parseInt(readlineSync.question("Enter the number to be guessed "));
 const num = 13;
 const guessingGame = (userNum ,count) => {
     if (guessNum === num) {
         console.log(`The guessed number is correct. The number of guesses is ${count}`);
-    } else if ( guessNum > num) {
+    } else if (guessNum > num) {
         console.log(`The guessed number is too large. Number of guesses is ${count}`);
-        guessNum = Number(readlineSync.question("Guess again "));
+        guessNum = parseInt(readlineSync.question("Guess again "));
         if (guessNum !== userNum) {
             count = count + 1;
         }
         guessingGame(guessNum ,count);
-    } else if ( guessNum < num) {
+    } else if (guessNum < num) {
         console.log(`The guessed number is too small. Number of guesses is ${count}`);
-        guessNum = Number(readlineSync.question("Guess again "));
+        guessNum = parseInt(readlineSync.question("Guess again "));
         if (guessNum !== userNum) {
             count = count + 1;
         }
