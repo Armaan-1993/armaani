@@ -5,18 +5,19 @@ let number = 2;
 const sumOfNNum = (num) => {
     sum = 0;
     isMultiple = false;
-    for(i = 0; i <= num; i++) {
+    for (let i = 0; i <= num; i++) {
         if (i % 3 === 0 || i % 5 === 0) {
             isMultiple = true;
             sum += i;
         }    
     }
-    if(isMultiple === true) {
+    if (isMultiple === true) {
         console.log("The sum of the multiple of 3 or 5 from 1 to the given number " + num+ " is " + sum);
     } else {
     console.log("There are no multiples of 3 or 5 in the given number " + num + " . Hence sum cannot be found");
     }
 }
+
 sumOfNNum(number);
 
 
