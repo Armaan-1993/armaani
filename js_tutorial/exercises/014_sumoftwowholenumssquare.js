@@ -3,8 +3,8 @@
 const num = 8;
 const squaresOfWholeNums = (num) => {
     let isSumOfSquares = false;
-    for(i = 1; i <= num; i++) {
-        for(j = 1; j <= num; j++) {
+    for (let i = 1; i <= num; i++) {
+        for (let j = 1; j <= num; j++) {
             if (num === i**2 + j**2) {
                 isSumOfSquares = true;
             }    
@@ -12,14 +12,13 @@ const squaresOfWholeNums = (num) => {
     }
    if (isSumOfSquares === true) {
         console.log(`The number ${num} is the sum of squares of two numbers`);
-    }
-   else {
+    } else {
         console.log(`The number ${num} is not the square of two numbers`);
     } 
 
 }   
-squaresOfWholeNums(num);
 
+squaresOfWholeNums(num);
 
 /*Output:
 
