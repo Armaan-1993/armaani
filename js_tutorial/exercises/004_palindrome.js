@@ -5,11 +5,11 @@ const palindrome = (str) => {
     let reverse = str.split("").reverse().join("");   //using join("") to eliminate commas while joining the string
     if (reverse === string) {
         console.log(`The string "${string}" is a palindrome`);
-    }
-    else {
+    } else {
         console.log(`The string "${string}" is not a palindrome`);
     }
 }
+
 palindrome(string);
 
 // Alernative Method (Using regex in replace function)
@@ -19,12 +19,13 @@ const palindrome = (str) => {
     let reverse = str.split("").reverse().join().replace(/,/gi , "");
     if (reverse === string) {
         console.log(`The string "${string}" is a palindrome`);
-    }
-    else {
+    } else {
         console.log(`The string "${string}" is not a palindrome`);
     }
 }
+
 palindrome(string);
+
 
 /*Output:
 
