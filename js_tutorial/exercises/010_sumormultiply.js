@@ -5,21 +5,21 @@ const number = 5;
 const readlineSycn = require("readline-sync");
 const string = readlineSycn.question("Enter the operation to be done : Add/Multiply (A or M): ");
 const multiplyOrAdd = (num) => {
-let sum = 0;
-let product = 1;
+    let sum = 0;
+    let product = 1;
     if (string === "A") {
-        for(let i = 0 ; i <= num ; i++) {
+        for (let i = 0; i <= num; i++) {
             sum += i;
         }
         console.log("The sum of the numbers from 1 to " + num +" is " + sum);
-    }
-    else if (string === "M") {
-        for(i = 1; i <= num; i++) {
+    } else if (string === "M") {
+        for (let i = 1; i <= num; i++) {
            product = i*product;
         }
         console.log("The product of the numbers from 1 to " + num + " is " + product);
     }
 }
+
 multiplyOrAdd(number);
 
 
