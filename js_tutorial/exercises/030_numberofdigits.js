@@ -2,7 +2,7 @@
 
 let num = 345;
 let numarray = num.toString().split("");
-const sumOfDigits = (number) => {
+const numberOfDigits = (number) => {
     let digits = 0;
     for (let i = 0; i <= number.length; i++) {
         digits = i;
@@ -10,7 +10,7 @@ const sumOfDigits = (number) => {
     console.log(`The number of digits of ${num} is ${digits}`);
 } 
 
-sumOfDigits(numarray);  
+numberOfDigits(numarray);  
 
 
 /*Output:
