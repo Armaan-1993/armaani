@@ -2,11 +2,12 @@
 
 let array = [2,13,34,1,5];
 const multiplyArrayConst = (array) => {
-    for(let i = 0; i < array.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         product = array[i] * 5 ;
         console.log("The product of the element " + array[i] + " with the constant 5 is " + product);
     }
 }
+
 multiplyArrayConst(array);
 
 // Alternative Method
@@ -17,7 +18,8 @@ const multiplyArrayConst = (array) => {
     console.log("The product of the element " + array[i] + " with the constant 5 is " + array[i]*5);
     i++;
 }
-for(let i = 0; i < array.length; i++) {
+
+for (let i = 0; i < array.length; i++) {
     multiplyArrayConst(array);
 }
 
