@@ -2,7 +2,7 @@
 
 const replaceZerosWithOne = (num) => {
     let stringnum = num.toString();
-    let newstring = stringnum.replace(/0/g,'1'); //using regex in replace function
+    let newstring = stringnum.replace(/0/g ,'1'); //using regex in replace function
     console.log(`${num} after replacing its zeroes with ones is ${newstring}`);
 }
 
