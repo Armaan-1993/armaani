@@ -5,6 +5,7 @@ const replaceZerosWithOne = (num) => {
     let newstring = stringnum.replace(/0/g,'1'); //using regex in replace function
     console.log(`${num} after replacing its zeroes with ones is ${newstring}`);
 }
+
 replaceZerosWithOne(15005);
 
 
