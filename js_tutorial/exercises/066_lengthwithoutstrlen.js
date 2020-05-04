@@ -4,8 +4,8 @@ const stringLenghtWithoutStrlen = (string) => {
     let stringArray = string.split("");
     stringArray = stringArray.push("$");
     return stringArray
-   
 }
+
 console.log(`The length is ${stringLenghtWithoutStrlen(`armaan`) - 1}`);
 
 /*Output:
