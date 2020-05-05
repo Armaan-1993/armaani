@@ -2,7 +2,7 @@
 
 const leapYear = (year) => {
     isleapyear = false;
-    if (year % 4 === 0) {
+    if (year % 4 === 0 || year % 400 === 0) {
         isleapyear = true;
     } else if (year % 100 === 0) {
         isleapyear = false;
@@ -14,7 +14,7 @@ const leapYear = (year) => {
     }
 }
 
-leapYear(2021);
+leapYear(2200);
 
 
 /*Ouput:
