@@ -28,6 +28,7 @@ const numberOfDaysInMonth = (year) => {
 
 numberOfDaysInMonth(year);
 
+
 /*Output:
 
 The month February has 29 days in the year 2020
