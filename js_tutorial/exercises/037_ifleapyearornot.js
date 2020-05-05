@@ -22,4 +22,4 @@ leapYear(2200);
 PS C:\Users\armaa\PycharmProjects\Learningjavascript\exercises> node .\037_ifleapyearornot.js
 The year 2021 is not a leap year
 PS C:\Users\armaa\PycharmProjects\Learningjavascript\exercises> node .\037_ifleapyearornot.js
-The year 2020 is a leap year*/
+The year 2200 is a leap year*/
