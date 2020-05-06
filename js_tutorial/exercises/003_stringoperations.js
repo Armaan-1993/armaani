@@ -40,7 +40,7 @@ const mixTwoStrings = (string1 ,string2) => {
     console.log(mixedString); 
 }
 
-mixTwoStrings("poli" ,"akshay");
+mixTwoStrings("poli" ,"armaan");
 //split in half
 const splitInHalf = (string) => {
     return string.slice(0 ,string.length/2);
@@ -53,3 +53,13 @@ const removeWhiteSpaces = (string) => {
 }
 
 console.log(`The string after removing white spaces is "${removeWhiteSpaces("a r maan")}"`);
+
+/*Output:
+
+The concatinated string is "Armaan Mathew"        
+The reversed string is "naamrA"
+The string after reverse concat is "naamrA wehtaM"
+The mixed result is:
+paorlmiaan
+The string split in half is "adren"
+The string after removing white spaces is "armaan"*/
